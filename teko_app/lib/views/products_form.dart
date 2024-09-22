@@ -44,7 +44,7 @@ class _ProductFormState extends State<ProductForm> {
             TextButton(
               child: const Text('OK'),
               onPressed: () {
-                Navigator.of(context).pop(); // Close the dialog
+                Navigator.of(context).pop(); 
               },
             ),
           ],
@@ -64,7 +64,7 @@ class _ProductFormState extends State<ProductForm> {
             TextButton(
               child: const Text('OK'),
               onPressed: () {
-                Navigator.of(context).pop(); // Close the dialog
+                Navigator.of(context).pop(); 
               },
             ),
           ],
@@ -88,7 +88,7 @@ class _ProductFormState extends State<ProductForm> {
           SizedBox(height: 15.h),
           FormTextField(
             label: 'Giá sản phẩm',
-            isNumber: true, // Ensure it's a number
+            isNumber: true, 
             isRequired: true,
             controller: _priceController,
           ),
