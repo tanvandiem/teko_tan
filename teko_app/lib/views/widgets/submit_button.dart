@@ -12,12 +12,12 @@ class SubmitButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: const Text('Tạo sản phẩm', style: TextStyle(color: Colors.white)),
       style: ElevatedButton.styleFrom(
         minimumSize: Size(180.w, 30.h),
         backgroundColor: Colors.blue,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
       ),
+      child: const Text('Tạo sản phẩm', style: TextStyle(color: Colors.white)),
     );
   }
 }

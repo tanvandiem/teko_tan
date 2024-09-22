@@ -9,6 +9,7 @@ class ImageUploader extends StatefulWidget {
   const ImageUploader({super.key, required this.onImageSelected});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ImageUploaderState createState() => _ImageUploaderState();
 }
 
@@ -17,8 +18,8 @@ class _ImageUploaderState extends State<ImageUploader> {
   bool _isImageError = false;
 
   Future<void> _pickImage() async {
-    final ImagePicker _picker = ImagePicker();
-    final XFile? pickedImage = await _picker.pickImage(source: ImageSource.gallery,); 
+    final ImagePicker picker = ImagePicker();
+    final XFile? pickedImage = await picker.pickImage(source: ImageSource.gallery,); 
 
     if (pickedImage != null) {
       setState(() {
